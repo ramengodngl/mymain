@@ -1,0 +1,120 @@
+*, *::before, *::after{
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+}
+body{
+    max-height: 100%;
+    max-width: 100%;
+margin: 0;
+padding: 0;
+background-image: url("jap.jpeg");
+background-size: 100% 100%;
+}
+nav{
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+.logo{
+    margin-left: 1rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-size: 1.111rem;
+}
+
+/* // */
+
+.grid{
+    margin-top: .8rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 95px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 100px);
+}
+.btn{
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.155);
+    color: black;}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.155);
+    color: black;
+    box-shadow: 1px 1px 6px 2px rgba(255, 255, 255, 0.9);
+}
+.span-two {
+    grid-column: span 2;
+    border-radius: 6%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    background: rgba(0, 0, 0, 0.2);
+}
+.span-two:hover{
+    grid-column: span 2;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.155);
+    color: black;
+        box-shadow: 1px 1px 6px 2px rgba(255, 255, 255, 0.9);
+}
+.output{
+    grid-column: 1 /-1;
+    background-color:rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 24%;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.prev-oper{
+color: white;
+margin-right: 5px;
+font-size: 1rem;
+font-weight: bold;
+}
+.curr-oper{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-right: 5px;
+}
+
+footer{
+    bottom: o;
+    display: flex;
+    justify-content:flex-start;
+    font-weight: bold;
+    color: white;
+
+}
